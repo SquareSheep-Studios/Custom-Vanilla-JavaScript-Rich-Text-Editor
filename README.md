@@ -1,4 +1,4 @@
-# Custom 100% Vanilla Javascript Rich Text Editor #
+# Custom 100% Vanilla JavaScript Rich Text Editor #
 This rich text editor is intended for use within a CMS (Content Management System) and is not supposed to replicate something like Microsoft Word or Google Docs. It is designed to help keep new content uniform and follow a standard pattern, all with the same styling and layout. This is why there are no features like "line height", "margins", "font" or "color"; as they would all be predefined in the stylesheet when establishing a unique design for your content.
 
 ## Features ##
