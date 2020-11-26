@@ -6,6 +6,7 @@ This rich text editor is intended for use within a CMS (Content Management Syste
 * The ability to manipulate elements and change their "type" (e.g. title, heading, list element, hyperlink, image)</li>
 * Sanitized pasting and selections
 
+## License ##
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
