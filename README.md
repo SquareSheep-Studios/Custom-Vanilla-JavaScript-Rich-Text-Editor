@@ -3,7 +3,8 @@ This rich text editor is intended for use within a CMS (Content Management Syste
 
 ## Features ##
 * Built from the ground up with 100% vanilla JavaScript
-* The ability to manipulate elements and change their "type" (e.g. title, heading, list element, hyperlink, image)</li>
+* The ability to manipulate elements and change their "type" (e.g. title, heading, list element, hyperlink, image)
+* Custom macros for execuring commands quickly and efficiently
 * Sanitized pasting and selections
 
 ## License ##
