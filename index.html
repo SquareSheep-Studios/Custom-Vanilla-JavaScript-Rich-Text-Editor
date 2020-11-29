@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="main.css">
+        <title>Rich Text Editor</title>
+    </head>
+    <body>
+        <div id="title">WYSIWYG Editor</div>
+        <div id="subheading">Developed by <a href="https://squaresheepstudios.com" target="_blank">SquareSheep Studios</a> | Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons</a> | Find the project on <a href="https://github.com/SquareSheep-Studios/Custom-Vanilla-JavaScript-Rich-Text-Editor" target="_blank">GitHub</a></div>
+        <div id="commands">
+            <button class="command" onclick="executeEditorCommand('H1')"><i class="command-icon fas fa-heading"></i></button>
+            <button class="command" onclick="executeEditorCommand('H2')"><i class="command-icon fas fa-bold"></i></button>
+            <button class="command" onclick="executeEditorCommand('LI')"><i class="command-icon fas fa-list-ul"></i></button>
+            <button class="command" onclick="executeEditorCommand('A')"><i class="command-icon fas fa-link"></i></button>
+            <button class="command" onclick="executeEditorCommand('IMG')"><i class="command-icon far fa-file-image"></i></button>
+        </div>    
+        <div id="editor" contenteditable="true"><h1>Custom 100% Vanilla Javascript Rich Text Editor</h1>
+            <h2>CMS Content Editor - you can edit everything!</h2>
+            <p>All of the content in this area is editable. This editor is intended for use within a CMS (Content Management System) and is not supposed to replicate something like Microsoft Word or Google Docs. It is designed to help keep new content uniform and follow a standard pattern (e.g. titles, headings, links) all with the same styling and layout. This is why there are no features like "line height", "margins", "font" or "color"; as they would all be predefined in the stylesheet when establishing a unique design for your content.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Built from the ground up with 100% vanilla JavaScript (inspect the page and see for yourself!)</li>
+                <li>The ability to manipulate elements and change their "type" (e.g. title, heading, list element, hyperlink, image)</li>
+                <li>Custom macros for execuring commands quickly and efficiently</li>
+                <li>Sanitized pasting and selections</li>
+            </ul>
+            <h2>So how do I use it then?</h2>
+            <p>The UI that you are looking at is mainly placeholder and just demonstrates the features. This project is really about the JavaScript logic that powers it - so you could hook it up to any interface and make it work how you want.</p>
+            <p>For this demo, clicking the tabs at the top of the editor will allow you to change or define a type of node you want to create (title, heading, list, link, image). Clicking this will either change an element into this type, or, if the element was already this type it will change it back to a normal paragraph. For the hyperlink and image, just insert the link and the element will be created with the appropriate information.</p>
+            <p>I have tried to design this stystem so that it generates perfect HTML to be styled with CSS and easy for web assistants to process and interpret correctly. For example, lists are always created by being wrapped in a "UL", and images come with an "ALT" attribute.</p>
+            <h1>Demo (Title)</h1>
+            <h2>I'm a heading</h2>
+            <p>This is a paragraph, which you are prefectly farmiliar with by them now, but here you go anyway. You can also insert links inside of paragraphs like <a href="https://squaresheepstudios.com">this</a>. You can't click them from inside the editor - but they're there - trust me!</p>
+            <h2>Below is a list</h2>
+            <ul>
+                <li>I'm the first element in the list</li>
+                <li>I'm the second</li>
+                <li>And I'm the last one</li>
+            </ul>
+            <h2>Macros</h2>
+            <ul>
+                <li>"Ctrl + u" for a title</li>
+                <li>"Ctrl + b" for a heading</li>
+                <li>"Ctrl + l" for a list element</li>
+                <li>"Ctrl + q" for a hyperlink</li>
+                <li>"Ctrl + i" for to insert an image</li>
+            </ul>
+            <h2>...and to end, here is a lovely picture of Barry</h2>
+            <img src="https://squaresheepstudios.com/images/logo-extended-shadow.png" alt="A lovely picture of Barry">
+        </div>
+            
+        <script src="script.js"></script>
+    </body>
+</html>
